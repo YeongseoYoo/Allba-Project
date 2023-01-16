@@ -5,6 +5,7 @@ import LoginView from '../views/LoginView.vue';
 import MainView from '../views/MainView.vue';
 import ScheduleView from '../views/ScheduleView.vue';
 import CalendarView from '../views/CalendarView.vue';
+import RegisterView from '../views/RegisterView.vue';
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,12 @@ export default new VueRouter({
     {
       path: '/calendar',
       component: CalendarView,
+    },
+    {
+      path: '/register',
+      component:RegisterView
+      
+
     },
     // path: '/news',
      // component: NewsView,
