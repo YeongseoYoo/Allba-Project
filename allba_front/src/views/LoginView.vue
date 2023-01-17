@@ -1,16 +1,13 @@
 <template>
-<<<<<<< HEAD
-    <div>
-        login
-=======
+
     <div class="main">
         <div class="container">
             <h1 class="logo">Login</h1>
             <input type="text" placeholder="ID" id="id" class="account">
             <input type="password" placeholder="Password" id="password" class="account">
             <button id="login" class="account">login</button>
+            <i class="fa-sharp fa-solid fa-right-from-bracket"></i><span>회원가입</span>
         </div>
->>>>>>> parent of 1cadf842 ([CREATE]지점등록 제작, 로그인화면수정)
     </div>
 </template>
 <script>
@@ -18,10 +15,6 @@ export default {
     
 }
 </script>
-<<<<<<< HEAD
-<style>
-    
-=======
 
 <style scoped>
 .main {
@@ -66,5 +59,8 @@ export default {
 #alert {
     border-color: transparent;
 }
->>>>>>> parent of 1cadf842 ([CREATE]지점등록 제작, 로그인화면수정)
+
+.fa-sharp{
+    font-size:12px;
+}
 </style>
