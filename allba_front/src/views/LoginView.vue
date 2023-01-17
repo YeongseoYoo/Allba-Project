@@ -5,6 +5,9 @@
             <input type="text" placeholder="ID" id="id" class="account">
             <input type="password" placeholder="Password" id="password" class="account">
             <button id="login" class="account">login</button>
+            <div class="register">
+            <i class="fa-solid fa-right-from-bracket"></i><span class="regi">  회원가입</span>
+            </div>
         </div>
     </div>
 
@@ -56,5 +59,14 @@
 
 #alert {
     border-color: transparent;
+}
+
+.register{
+    margin-top:8px;
+}
+
+.fa-solid{
+    font-size:12px;
+
 }
 </style>
