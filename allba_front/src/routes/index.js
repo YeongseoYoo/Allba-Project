@@ -38,7 +38,13 @@ export default new VueRouter({
     },
     {
       path: '/register',
+<<<<<<< HEAD
       component: RegisterView,
+=======
+      component:RegisterView
+      
+
+>>>>>>> 505b5f1623756e9d4b69494435f65cf191dbad4a
     },
     // path: '/news',
      // component: NewsView,

@@ -6,14 +6,17 @@
             <input type="text" placeholder="ID" id="id" class="account">
             <input type="password" placeholder="Password" id="password" class="account">
             <button id="login" class="account">login</button>
+
             <i class="fa-sharp fa-solid fa-right-from-bracket"></i><span>회원가입</span>
+
+
         </div>
     </div>
+
 </template>
+
 <script>
-export default {
-    
-}
+
 </script>
 
 <style scoped>
@@ -60,7 +63,9 @@ export default {
     border-color: transparent;
 }
 
+
 .fa-sharp{
     font-size:12px;
 }
+
 </style>
