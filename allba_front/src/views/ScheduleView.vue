@@ -91,20 +91,14 @@ export default {
     width: 90%;
     margin-left: 5%
 }
-<<<<<<< HEAD
 
-.unedrline {
-    width: 98%;
-    margin-left: 1%;
-    margin-top: 2%;
-    margin-bottom: 10%;
-=======
+
+
 .unedrline{
     width:98%;
     margin-left:1%;
     margin-top:2%;
 
     margin-bottom:10%;
->>>>>>> 505b5f1623756e9d4b69494435f65cf191dbad4a
 }
 </style>
