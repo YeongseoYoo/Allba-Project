@@ -1,4 +1,5 @@
 <template>
+
     <div class="main">
         <div class="container">
             <h1 class="logo">Login</h1>
@@ -6,7 +7,7 @@
             <input type="password" placeholder="Password" id="password" class="account">
             <button id="login" class="account">login</button>
             <div class="register">
-            <i class="fa-solid fa-right-from-bracket"></i><span class="regi">  회원가입</span>
+            <router-link to="signup"><i class="fa-solid fa-right-from-bracket"></i><span class="regi"> 회원가입</span></router-link>
             </div>
         </div>
     </div>
@@ -61,6 +62,7 @@
     border-color: transparent;
 }
 
+
 .register{
     margin-top:8px;
 }
@@ -69,4 +71,5 @@
     font-size:12px;
 
 }
+
 </style>

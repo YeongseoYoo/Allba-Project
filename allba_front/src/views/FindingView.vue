@@ -1,4 +1,5 @@
 <template>
+
 <div>
     <h2 class="title">지점찾기</h2>   
     <hr class="line">
@@ -71,28 +72,33 @@
             </div>
             </div>
 </div>
+
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style scoped >
-.title{
-    font-weight:600;
-    font-size:32px;
+.title {
+    font-weight: 600;
+    font-size: 32px;
     margin-top: 48px;
-    margin-left:8%;
- ;
+    margin-left: 8%;
+    ;
 }
 
-.line{
-    width:90%;
-    margin-left:5%
+.line {
+    width: 90%;
+    margin-left: 5%
 }
+
+h5 {
+    font-size: 18px;
+}
+
 h5{
     font-size:18px;
 }
-
 
 </style>

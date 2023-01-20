@@ -78,7 +78,6 @@ export default {
         'full-calendar': require('vue-fullcalendar')
     }
 }
-
 </script>
 <style scoped>
 .title {
@@ -92,6 +91,9 @@ export default {
     width: 90%;
     margin-left: 5%
 }
+
+
+
 .unedrline{
     width:98%;
     margin-left:1%;
