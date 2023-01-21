@@ -8,6 +8,7 @@ import CalendarView from '../views/CalendarView.vue';
 import RegisterView from '../views/RegisterView.vue';
 import NoScheduleView from '../views/NoScheduleView.vue';
 import SignupView from '../views/SignupView.vue';
+import MypageView from '../views/MypageView.vue';
 
 Vue.use(VueRouter);
 
@@ -50,6 +51,10 @@ export default new VueRouter({
       path:'/signup',
       component:SignupView
     },
+    {
+      path:'/mypage',
+      component:MypageView
+    }
 
   ]
 })
