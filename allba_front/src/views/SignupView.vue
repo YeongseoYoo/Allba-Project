@@ -1,141 +1,101 @@
 <template>
     <div class="container">
-            <h2 class="title">회원가입</h2>
-            <hr class="line">
+        <h2 class="title">회원가입</h2>
+        <hr class="line">
 
+        <form v-on:submit.prevent="submitForm">
+        <div>
+            <h3 class="join_title"><label for="pswd1">ID</label></h3>
+            <span class="box int_pass">
+              <input type="text" id="id" class="int" maxlength="20" v-model="pid">
+            </span>
+        </div>
+            <!-- PW1 -->
+        <div>
+            <h3 class="join_title"><label for="pswd1">PW</label></h3>
+            <span class="box int_pass">
+                <input type="text" id="pswd1" class="int" maxlength="20" v-model="pwd">
+           </span>
+        </div>
 
-            <div>
-                    <h3 class="join_title"><label for="pswd1">ID</label></h3>
-                    <span class="box int_pass">
-                        <input type="text" id="id" class="int" maxlength="20">
-                
-                    </span>
-                </div>
+       <!-- NAME -->
+        <div>
+            <h3 class="join_title"><label for="name">이름</label></h3>
+            <span class="box int_name">
+            <input type="text" id="name" class="int" maxlength="20" v-model="name">
+            </span>       
+        </div>
+            <!-- EMAIL -->
+        <div>
+        <h3 class="join_title"><label for="email">E-mail</label></h3>
+        <span class="box int_email">
+        <input type="text" id="email" class="int" maxlength="100" placeholder="optional" v-model="email">
+        </span>
+        </div>
 
- 
-                <!-- PW1 -->
-                <div>
-                    <h3 class="join_title"><label for="pswd1">PW</label></h3>
-                    <span class="box int_pass">
-                        <input type="text" id="pswd1" class="int" maxlength="20">
-                
-                    </span>
-                </div>
-
-                <!-- PW2 -->
-                <div>
-                    <h3 class="join_title"><label for="pswd2">PW RECHECK</label></h3>
-                    <span class="box int_pass_check">
-                        <input type="text" id="pswd2" class="int" maxlength="20">
-                        <!-- <img src="m_icon_check_disable.png" id="pswd2_img1" class="pswdImg"> -->
-                    </span>
-                    <!-- <span class="error_next_box"></span> -->
-                </div>
-
-                <!-- NAME -->
-                <div>
-                    <h3 class="join_title"><label for="name">NAME</label></h3>
-                    <span class="box int_name">
-                        <input type="text" id="name" class="int" maxlength="20">
-                    </span>
-                    <!-- <span class="error_next_box"></span> -->
-                </div>
-
-                <!-- BIRTH -->
-                <div>
-                    <h3 class="join_title"><label for="yy">BIRTHDAY</label></h3>
-
-                    <div id="bir_wrap">
-                        <!-- BIRTH_YY -->
-                        <div id="bir_yy">
-                            <span class="box">
-                                <input type="text" id="yy" class="int" maxlength="4" placeholder="YEAR(4-letters)">
-                            </span>
-                        </div>
-
-                        <!-- BIRTH_MM -->
-                        <div id="bir_mm">
-                            <span class="box">
-                                <select id="mm" class="sel">
-                                    <option>MONTH</option>
-                                    <option value="01">1</option>
-                                    <option value="02">2</option>
-                                    <option value="03">3</option>
-                                    <option value="04">4</option>
-                                    <option value="05">5</option>
-                                    <option value="06">6</option>
-                                    <option value="07">7</option>
-                                    <option value="08">8</option>
-                                    <option value="09">9</option>                                    
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                </select>
-                            </span>
-                        </div>
-
-                        <!-- BIRTH_DD -->
-                        <div id="bir_dd">
-                            <span class="box">
-                                <input type="text" id="dd" class="int" maxlength="2" placeholder="DAY">
-                            </span>
-                        </div>
-
-                    </div>
-                    <!-- <span class="error_next_box"></span>     -->
-                </div>
-
-                <!-- GENDER -->
-                <div>
-                    <h3 class="join_title"><label for="gender">GENDER</label></h3>
-                    <span class="box gender_code">
-                        <select id="gender" class="sel">
-                            <option>gender</option>
-                            <option value="M">MALE</option>
-                            <option value="F">FEMALE</option>
-                        </select>                            
-                    </span>
-                    <span class="error_next_box">This is essential information.</span>
-                </div>
-
-                <!-- EMAIL -->
-                <div>
-                    <h3 class="join_title"><label for="email">E-mail<span class="optional">(optional)</span></label></h3>
-                    <span class="box int_email">
-                        <input type="text" id="email" class="int" maxlength="100" placeholder="optional">
-                    </span>
-                    <span class="error_next_box">Please recheck your email address</span>    
-                </div>
-
-                <!-- MOBILE -->
-                <div>
-                    <h3 class="join_title"><label for="phoneNo">PHONE NUM</label></h3>
-                    <span class="box int_mobile">
-                        <input type="tel" id="mobile" class="int" maxlength="16" placeholder="Write Your Phone Number">
-                    </span>
-                    <span class="error_next_box"></span>    
-                </div>
-
-
-                <!-- JOIN BTN-->
-                <div class="btn_area">
-                    <button type="button" id="btnJoin">
-                        <span>SIGN-IN</span>
-                    </button>
-                </div>           
-
-            </div> 
-            <!-- content-->
-
+        <!-- MOBILE -->
+        <div>
+        <h3 class="join_title"><label for="phoneNo">전화번호</label></h3>
+        <span class="box int_mobile">
+            <input type="tel" id="mobile" class="int" maxlength="16" placeholder="Write Your Phone Number" v-model="phone">
+        </span>
+        </div>
+        <!-- JOIN BTN-->
+        <div class="btn_area">
+        <button type="submit" id="btnJoin">
+            <span>가입하기</span>
+        </button>
+        </div>   
+        
+         <p>{{ logMessage }}</p>
+        </form>    
         </div> 
-        <!-- wrapper -->
-
-        </body>
+        </div> 
+    </body>
     </html>
     </div>
 </template>
 <script>
+import { registerUser } from '@/api/index';
 
+export default {
+    data(){
+        return {
+            //form value
+            pid: '',
+            name: '',
+            pwd: '',
+            phone: '',
+            email: '',
+            //log
+            logMessage:'',
+        };
+    },
+    methods: {
+        async submitForm(){
+            console.log('폼제출');
+            const userData = {
+                pid: this.pid,
+                pwd: this.pwd,
+                name: this.name,
+                phone: this.phone,
+                email: this.email,
+            }
+            const { data } = await registerUser(userData);
+            console.log(data.name);
+            this.logMessage = `${data.name}님 환영합니다`;
+            this.initForm();
+        },
+        initForm() {
+            this.pid = '';
+            this.pwd = '';
+            this.name = '';
+            this.phone = '';
+            this.email = '';
+        }
+        
+    },
+};
 </script>
 <style scoped>
 .line{
