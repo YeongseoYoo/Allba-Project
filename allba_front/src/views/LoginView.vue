@@ -37,8 +37,9 @@ export default {
                 pwd: this.pwd,
             };
             const { data } = await loginUser(userData);
-            console.log(data.name);
-            this.logMessage = `${data.user.name}님 어서오세요`;
+            console.log(data.user.name);
+            this.$router.push('/main');
+            // this.logMessage = `${data.user.name}님 어서오세요`;
             this.initForm();
         },
         initForm() {
