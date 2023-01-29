@@ -1,6 +1,7 @@
 <template lang="">
     <div>
     <h2 class="title">스케쥴링</h2>
+    
     <hr class="line">
 
    <div class="p-4 mt-5" >
@@ -50,7 +51,11 @@
                                         </div>
                                     </div>
                                 </div>
-           
+                   <div class="d-flex flex-row-reverse gap-2 mt-4">
+            <router-link to="/room"><button type="button" class="btn btn-warning">
+                대타 신청하기
+            </button></router-link>
+        </div>
 
         </div>
             </div>
@@ -102,6 +107,8 @@
     </div>
 </template>
 <script>
+
+
 import FullCalendar from '@fullcalendar/vue'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'

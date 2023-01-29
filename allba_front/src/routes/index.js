@@ -9,6 +9,7 @@ import RegisterView from '../views/RegisterView.vue';
 import NoScheduleView from '../views/NoScheduleView.vue';
 import SignupView from '../views/SignupView.vue';
 import MypageView from '../views/MypageView.vue';
+import RoomView from '../views/RoomView.vue';
 
 Vue.use(VueRouter);
 
@@ -54,7 +55,12 @@ export default new VueRouter({
     {
       path:'/mypage',
       component:MypageView
-    }
+    },
+    {
+      path: '/room',
+      component:RoomView
+    },
+
 
   ]
 })
