@@ -1,4 +1,5 @@
 <template>
+
 <div>
     <h2 class="title">지점찾기</h2>   
     <hr class="line">
@@ -16,6 +17,7 @@
         </router-link>
 
     <hr class="line">
+    <!-- hi  -->
 
 
     <div class="p-5 10" style="width:88%; margin-left:6%;" >
@@ -71,28 +73,33 @@
             </div>
             </div>
 </div>
+
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style scoped >
-.title{
-    font-weight:600;
-    font-size:32px;
+.title {
+    font-weight: 600;
+    font-size: 32px;
     margin-top: 48px;
-    margin-left:8%;
- ;
+    margin-left: 8%;
+    ;
 }
 
-.line{
-    width:90%;
-    margin-left:5%
+.line {
+    width: 90%;
+    margin-left: 5%
 }
+
+h5 {
+    font-size: 18px;
+}
+
 h5{
     font-size:18px;
 }
-
 
 </style>

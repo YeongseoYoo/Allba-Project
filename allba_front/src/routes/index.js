@@ -6,6 +6,10 @@ import MainView from '../views/MainView.vue';
 import ScheduleView from '../views/ScheduleView.vue';
 import CalendarView from '../views/CalendarView.vue';
 import RegisterView from '../views/RegisterView.vue';
+import NoScheduleView from '../views/NoScheduleView.vue';
+import SignupView from '../views/SignupView.vue';
+import MypageView from '../views/MypageView.vue';
+import RoomView from '../views/RoomView.vue';
 
 Vue.use(VueRouter);
 
@@ -39,10 +43,24 @@ export default new VueRouter({
     {
       path: '/register',
       component:RegisterView
-      
-
     },
-    // path: '/news',
-     // component: NewsView,
-]
+    {
+      path:'/noschedule',
+      component:NoScheduleView
+    },
+    {
+      path:'/signup',
+      component:SignupView
+    },
+    {
+      path:'/mypage',
+      component:MypageView
+    },
+    {
+      path: '/room',
+      component:RoomView
+    },
+
+
+  ]
 })
